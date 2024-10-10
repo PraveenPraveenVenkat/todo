@@ -14,6 +14,14 @@ const Header = () => {
    const [message,setMessage]  =useState([])
 const apiurl = "http://localhost:3000/"
 
+
+  const [title,setTitle] =useState ("");
+  const [Description ,setDescription] = useState ("");
+   const [todos,setTods] =useState ([])
+   const [error,setError]  =useState([])
+   const [message,setMessage]  =useState([])
+const apiurl = "http://localhost:3000/"
+
   const  handleSubmit = () => {
     if (title.trim () !== ''  && Description.trim()!==  ''){
       fetch (apiurl+"/todos",{
